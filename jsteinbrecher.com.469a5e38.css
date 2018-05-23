@@ -1,0 +1,29 @@
+body {
+  margin: 0; }
+
+#root {
+  position: relative;
+  top: 0px;
+  left: 0px; }
+
+canvas {
+  width: 100vw;
+  height: 100vh; }
+
+.animation {
+  color: white;
+  position: absolute;
+  top: 20px;
+  left: 40px; }
+  .animation input {
+    top: 20px;
+    left: 20px;
+    vertical-align: middle; }
+
+.slider {
+  color: white;
+  position: absolute;
+  top: 80px;
+  left: 40px; }
+  .slider input {
+    width: 70px; }
