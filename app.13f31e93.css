@@ -1,0 +1,34 @@
+body {
+  margin: 0; }
+
+#root {
+  position: relative;
+  top: 0px;
+  left: 0px; }
+
+canvas {
+  width: 100vw;
+  height: 100vh; }
+
+.menu {
+  list-style: none;
+  color: white;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  text-align: right; }
+  .menu input {
+    width: 70px; }
+
+.controls {
+  color: white;
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  text-align: right; }
+  .controls svg:before {
+    margin: 20px; }
+  .controls svg:not(:first-child) {
+    margin-left: 20px; }
+  .controls svg:hover {
+    cursor: pointer; }
