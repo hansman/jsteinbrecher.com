@@ -33,6 +33,7 @@ class Slogan extends React.Component {
 
   componentWillUnmount() {
     window.removeEventListener('resize', this.updateWindowDimensions);
+    window.removeEventListener('orientationchange', this.updateWindowDimensions);
   }
 
   componentWillUpdate(nextProps) {
@@ -56,6 +57,7 @@ class Slogan extends React.Component {
 
   componentDidMount() {
     window.addEventListener('resize', this.updateWindowDimensions);
+    window.addEventListener('orientationchange', this.updateWindowDimensions);
     this.setup();
   }
 
@@ -90,6 +92,8 @@ class Slogan extends React.Component {
 
 
     let canvas = ReactDOM.findDOMNode(this.refs.canvas);
+    canvas.width = this.state.width;
+    canvas.height = this.state.height;
     canvas.style.background = 'black';
 
     let onFrame;

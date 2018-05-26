@@ -5,16 +5,19 @@ import Slogan from './src/slogan';
 import Menu from './src/menu';
 import tree from './src/state'
 import {root} from 'baobab-react/higher-order';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import { MuiThemeProvider } from '@material-ui/core/styles';
+import theme from './src/theme';
 
 class App extends React.Component {
 
   render() {
-    return <div className='app'>
+    return <MuiThemeProvider theme={theme}>
+      <CssBaseline />
       <Slogan />
       <Menu />
-    </div>;
+    </MuiThemeProvider>;
   }
-
 
 }
 

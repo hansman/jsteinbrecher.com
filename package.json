@@ -21,9 +21,8 @@
   },
   "homepage": "https://github.com/hansman/jsteinbrecher.com#readme",
   "dependencies": {
-    "@fortawesome/fontawesome": "^1.1.8",
-    "@fortawesome/fontawesome-free-solid": "^5.0.13",
-    "@fortawesome/react-fontawesome": "0.0.20",
+    "@material-ui/core": "^1.0.0",
+    "@material-ui/icons": "^1.0.0",
     "baobab-react": "^3.0.0",
     "paper": "^0.11.5",
     "react": "16.x",

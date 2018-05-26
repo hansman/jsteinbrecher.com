@@ -1,12 +1,15 @@
 import React from 'react';
-import FontAwesomeIcon from '@fortawesome/react-fontawesome';
-import faPlayCircle from '@fortawesome/fontawesome-free-solid/faPlayCircle';
-import faGem from '@fortawesome/fontawesome-free-solid/faGem';
 import Actions from './actions'
-import { yellowColors } from './colors';
+import { IconButton, Button} from '@material-ui/core';
+import { PlayArrow, BorderClear } from '@material-ui/icons';
+import { withStyles } from '@material-ui/core/styles';
 
 
-const highlightColor = yellowColors[1].toCSS();
+const styles = theme => ({
+  button: {
+    margin: theme.spacing.unit,
+  },
+});
 
 class Controls extends React.Component {
 
@@ -27,22 +30,18 @@ class Controls extends React.Component {
   }
 
   render() {
+    const { classes } = this.props;
+
     return <div className='controls'>
-      <FontAwesomeIcon
-        icon={faPlayCircle}
-        color={this.props.animate ? highlightColor : ''}
-        size='2x'
-        onClick={this.onAnimate}
-      />
-      <FontAwesomeIcon
-        icon={faGem}
-        color={this.props.resolution == 2 ?  highlightColor : ''}
-        onClick={this.onResolution}
-        size='2x'
-      />
+      <Button variant='fab' color='primary' size='medium' onClick={this.onAnimate} className={classes.button}>
+        <PlayArrow />
+      </Button>
+      <Button variant='fab' color='primary' size='medium' onClick={this.onResolution} className={classes.button}>
+        <BorderClear />
+      </Button>
     </div>
   }
 
 }
 
-export default Controls;
+export default withStyles(styles)(Controls);

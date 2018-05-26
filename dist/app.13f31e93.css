@@ -22,13 +22,7 @@ canvas {
 
 .controls {
   color: white;
-  position: absolute;
+  position: fixed;
   bottom: 40px;
   right: 40px;
   text-align: right; }
-  .controls svg:before {
-    margin: 20px; }
-  .controls svg:not(:first-child) {
-    margin-left: 20px; }
-  .controls svg:hover {
-    cursor: pointer; }

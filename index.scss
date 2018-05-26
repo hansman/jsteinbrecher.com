@@ -28,22 +28,8 @@ canvas {
 
 .controls {
   color: white;
-  position: absolute;
+  position: fixed;
   bottom: 40px;
   right: 40px;
   text-align: right;
-  svg {
-    &:before {
-      margin: 20px;
-    }
-  }
-
-  svg:not(:first-child) {
-    margin-left: 20px;
-  }
-
-  svg:hover {
-    cursor: pointer;
-  }
-
 }
