@@ -25,6 +25,7 @@
     "@material-ui/icons": "^1.0.0",
     "baobab-react": "^3.0.0",
     "paper": "^0.11.5",
+    "postcss-modules": "^1.1.0",
     "react": "16.x",
     "react-dom": "^16.3.2"
   },
