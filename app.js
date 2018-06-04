@@ -7,14 +7,14 @@ import Menu from './src/menu';
 import tree from './src/state'
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { MuiThemeProvider } from '@material-ui/core/styles';
+import theme from './src/theme';
 import { Grid } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 import { Switch, Route, BrowserRouter } from 'react-router-dom';
 import Gallery from './src/gallery';
-import { root } from 'baobab-react/higher-order';
-import theme from './src/theme';
 import ThoughtsOnProgression from './src/thoughtsOnProgression';
 import 'typeface-roboto';
+import { root } from 'baobab-react/higher-order';
 
 
 const styles = theme => ({
@@ -27,6 +27,12 @@ const styles = theme => ({
     color: theme.palette.text.secondary,
   },
 });
+
+class Home extends React.Component {
+  render () {
+    return null;
+  }
+}
 
 
 class App extends React.Component {
