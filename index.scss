@@ -3,33 +3,24 @@ body {
   margin: 0;
 }
 
-#root {
-  position: relative;
-  top: 0px;
-  left: 0px;
-}
-
 canvas {
   width: 100vw;
   height: 100vh;
+  vertical-align: middle;
 }
 
 .menu {
   list-style: none;
   color: white;
   position: absolute;
-  top: 40px;
-  right: 40px;
+  top: 30px;
+  right: 30px;
   input {
     width: 70px;
   }
   text-align: right;
 }
 
-.controls {
-  color: white;
-  position: fixed;
-  bottom: 40px;
-  right: 40px;
-  text-align: right;
+a {
+  color: inherit !important;
 }

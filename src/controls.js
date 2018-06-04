@@ -3,12 +3,17 @@ import Actions from './actions'
 import { IconButton, Button} from '@material-ui/core';
 import { PlayArrow, BorderClear } from '@material-ui/icons';
 import { withStyles } from '@material-ui/core/styles';
-
+import '../index.scss'
 
 const styles = theme => ({
   button: {
-    margin: theme.spacing.unit,
+    margin: theme.spacing.unit
   },
+  root: {
+    position: 'absolute',
+    bottom: 40,
+    right: 40
+  }
 });
 
 class Controls extends React.Component {
@@ -32,7 +37,7 @@ class Controls extends React.Component {
   render() {
     const { classes } = this.props;
 
-    return <div className='controls'>
+    return <div className={classes.root}>
       <Button variant='fab' color='primary' size='medium' onClick={this.onAnimate} className={classes.button}>
         <PlayArrow />
       </Button>

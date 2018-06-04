@@ -1,5 +1,4 @@
 import { createMuiTheme } from '@material-ui/core/styles';
-import orange from '@material-ui/core/colors/orange';
 
 const theme = createMuiTheme({
   palette: {
@@ -16,8 +15,12 @@ const theme = createMuiTheme({
       contrastText: '#000'
     }
   },
-  status: {
-    danger: orange,
+  typography: {
+    fontFamily: [
+      'Helvetica Neue',
+      'Helvetica',
+      'sans-serif'
+    ].join(',')
   }
 });
 

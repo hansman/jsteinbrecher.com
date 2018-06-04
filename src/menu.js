@@ -1,30 +1,35 @@
 import React from 'react';
-import { List, ListItem, ListItemText, ListSubheader, Collapse } from '@material-ui/core';
+import { Grid, List, ListItem, ListItemText, ListSubheader, Collapse, Typography } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 import theme from './theme';
+import {Link, withRouter } from 'react-router-dom';
+import { animateScroll as scroll } from 'react-scroll';
 
-import ExpandLess from '@material-ui/icons/ExpandLess';
-import ExpandMore from '@material-ui/icons/ExpandMore';
 
 const styles = theme => ({
   root: {
     position: 'fixed',
     top: 40,
     left: 40,
-    color: 'white',
+    color: theme.palette.primary.light,
     fontSize: 18,
-    fontFamily: 'helvetica'
+    'z-index': 2
   },
   listSection: {
-    textDecorationLine: 'underline',
     backgroundColor: 'transparent',
     cursor: 'hand'
   },
   li: {
-    fontSize: 25,
-    fontWeight: 540
-  },
+    color: theme.palette.primary.light,
+    width: 'inherit',
+    'text-decoration': 'none',
+    '&:hover': {
+      'text-decoration': 'underline'
+    }
+  }
 });
+
+
 
 class Menu extends React.Component {
 
@@ -33,9 +38,10 @@ class Menu extends React.Component {
     this.state = { open: 0 };
   }
 
-  handleClick(value) {
-    value = (this.state.open == value) ? 0 : value;
-    this.setState({ open: value });
+  componentDidUpdate(prevProps) {
+    if (this.props.location !== prevProps.location) {
+      scroll.scrollTo(0);
+    }
   }
 
   render() {
@@ -43,38 +49,17 @@ class Menu extends React.Component {
     const {classes} = this.props;
 
     return (
-      <div className={classes.root}>
-        <List component="nav">
-          <ListItem button className={classes.listSection}>HANS ST</ListItem>
-          <ListItem button className={classes.listSection} divider={true} onClick={this.handleClick.bind(this, 1)}>WORKS</ListItem>
-          <Collapse in={this.state.open == 1} timeout="auto" unmountOnExit>
-            <List component="div" disablePadding>
-              <ListItem button className={classes.li}>physical transformations</ListItem>
-            </List>
-          </Collapse>
-          <ListItem button className={classes.listSection} divider={true} onClick={this.handleClick.bind(this, 2)}>WORDS</ListItem>
-          <Collapse in={this.state.open == 2} timeout="auto" unmountOnExit>
-            <List component="div" disablePadding>
-              <ListItem button className={classes.li}>thoughts on our progression</ListItem>
-            </List>
-          </Collapse>
-          <ListItem button className={classes.listSection} onClick={this.handleClick.bind(this, 3)}>LABS</ListItem>
-          <Collapse in={this.state.open == 3} timeout="auto" unmountOnExit>
-            <List component="div" disablePadding>
-              <ListItem button className={classes.li}>bells and wistls</ListItem>
-              <ListItem button className={classes.li}>works @sfpc</ListItem>
-              <ListItem button className={classes.li}>ok google vs hey siri</ListItem>
-              <ListItem button className={classes.li}>hardware synthesizers</ListItem>
-              <ListItem button className={classes.li}>tshirt making</ListItem>
-            </List>
-          </Collapse>
-          <ListItem button className={classes.listSection}>LIVE</ListItem>
+      <Grid item xs={2} className={classes.root}>
+        <List component='nav'>
+          <ListItem button className={classes.listSection}><Link to='/about' className={classes.li}><Typography variant='title' gutterBottom className={classes.li}>HANS ST</Typography></Link></ListItem>
+          <ListItem button className={classes.listSection}><Link to='/thoughtsOnProgression' className={classes.li}><Typography variant='title' gutterBottom className={classes.li}>THOUGHTS ON OUR PROGRESSION</Typography></Link></ListItem>
+          <ListItem button className={classes.listSection}><Link to='/gallery' className={classes.li}><Typography variant='title' gutterBottom className={classes.li}>GALLERY</Typography></Link></ListItem>
         </List>
-      </div>
+      </Grid>
     );
 
   }
 
 }
 
-export default withStyles(styles)(Menu);
+export default withStyles(styles)(withRouter(Menu));

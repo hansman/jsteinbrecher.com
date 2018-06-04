@@ -9,7 +9,21 @@ import fonts from '../fonts/*'
 import { redColors, yellowColors } from './colors';
 import Controls from './controls';
 import {branch} from 'baobab-react/higher-order';
+import { withStyles } from '@material-ui/core/styles';
+import { debounce } from 'lodash';
 
+
+const styles = theme => ({
+  root: {
+    position: 'relative',
+    top: 0,
+    left: 0
+  }
+});
+
+let maxWidth = 0;
+
+let width, height;
 
 class Slogan extends React.Component {
 
@@ -27,7 +41,7 @@ class Slogan extends React.Component {
     };
 
     this.renderFrame = this.renderFrame.bind(this);
-    this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
+    this.updateWindowDimensions = debounce(this.updateWindowDimensions.bind(this), 100);
     this.setup = this.setup.bind(this);
   }
 
@@ -56,15 +70,21 @@ class Slogan extends React.Component {
   }
 
   componentDidMount() {
-    window.addEventListener('resize', this.updateWindowDimensions);
+    window.addEventListener('resize', this.updateWindowDimensions, false);
     window.addEventListener('orientationchange', this.updateWindowDimensions);
     this.setup();
   }
 
   updateWindowDimensions() {
+    if (window.innerWidth > maxWidth) {
+      maxWidth = window.innerWidth;
+      this.forceUpdate();
+    }
+    width = window.innerWidth;
+    height = window.innerHeight;
     this.setState({
-      width: window.innerWidth,
-      height: window.innerHeight
+      width: width,
+      height: height
     }, this.setup);
   }
 
@@ -90,6 +110,7 @@ class Slogan extends React.Component {
     const textItems = [];
     let rasterItems = [];
 
+    console.log('state', this.state);
 
     let canvas = ReactDOM.findDOMNode(this.refs.canvas);
     canvas.width = this.state.width;
@@ -211,8 +232,9 @@ class Slogan extends React.Component {
   }
 
   render() {
-    return <div id='root'>
-      <canvas ref='canvas' />
+    const { classes } = this.props;
+    return <div className={classes.root} style={{width: this.state.width, height: this.state.height}}>
+      <canvas ref='canvas' style={{width: this.state.width, height: this.state.height}} />
       <Controls {...this.props.slogan} />
     </div>
   }
@@ -220,4 +242,4 @@ class Slogan extends React.Component {
 
 export default branch({
   slogan: ['slogan']
-}, Slogan);
+}, withStyles(styles)(Slogan));
