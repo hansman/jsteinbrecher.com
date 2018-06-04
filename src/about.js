@@ -12,7 +12,7 @@ const styles = theme => ({
   root: {
     color: 'white',
     'background-color': 'rgba(0,0,0,0.8)',
-    padding: theme.spacing.unit * 15
+    padding: theme.spacing.unit * 25
   },
   font: {
     color: 'white'
