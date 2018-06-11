@@ -13,6 +13,7 @@ import { withStyles } from '@material-ui/core/styles';
 import { Switch, Route, BrowserRouter } from 'react-router-dom';
 import Gallery from './src/gallery';
 import ThoughtsOnProgression from './src/thoughtsOnProgression';
+import PhysicalTransformations from './src/physicalTransformations';
 import 'typeface-roboto';
 import { root } from 'baobab-react/higher-order';
 
@@ -52,6 +53,7 @@ class App extends React.Component {
               <Route exact path='/' component={Home}/>
               <Route exact path='/about' component={About}/>
               <Route path='/thoughtsOnProgression' component={ThoughtsOnProgression}/>
+              <Route path='/physicalTransformations' component={PhysicalTransformations}/>
               <Route path='/gallery' component={About}/>
             </Switch>
           </Grid>

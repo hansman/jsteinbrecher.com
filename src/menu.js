@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, List, ListItem, ListItemText, ListSubheader, Collapse, Typography } from '@material-ui/core';
+import { Grid, List, ListItem, Typography } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 import theme from './theme';
 import {Link, withRouter } from 'react-router-dom';
@@ -53,6 +53,7 @@ class Menu extends React.Component {
         <List component='nav'>
           <ListItem button className={classes.listSection}><Link to='/about' className={classes.li}><Typography variant='title' gutterBottom className={classes.li}>HANS ST</Typography></Link></ListItem>
           <ListItem button className={classes.listSection}><Link to='/thoughtsOnProgression' className={classes.li}><Typography variant='title' gutterBottom className={classes.li}>THOUGHTS ON OUR PROGRESSION</Typography></Link></ListItem>
+          <ListItem button className={classes.listSection}><Link to='/physicalTransformations' className={classes.li}><Typography variant='title' gutterBottom className={classes.li}>PHYSICAL INTERFACES</Typography></Link></ListItem>
           <ListItem button className={classes.listSection}><Link to='/gallery' className={classes.li}><Typography variant='title' gutterBottom className={classes.li}>GALLERY</Typography></Link></ListItem>
         </List>
       </Grid>
