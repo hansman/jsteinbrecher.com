@@ -17,6 +17,7 @@ import PhysicalTransformations from './src/physicalTransformations';
 import 'typeface-roboto';
 import { root } from 'baobab-react/higher-order';
 
+const PUBLIC_URL = '/jsteinbrecher.com/';
 
 const styles = theme => ({
   root: {
@@ -50,11 +51,11 @@ class App extends React.Component {
         <Grid container spacing={0}>
           <Grid item xs={12}>
             <Switch>
-              <Route exact path={`/${process.env.PUBLIC_URL}`} component={Home}/>
-              <Route exact path={`/${process.env.PUBLIC_URL}/about`} component={About}/>
-              <Route path={`/${process.env.PUBLIC_URL}/thoughtsOnProgression`} component={ThoughtsOnProgression}/>
-              <Route path={`/${process.env.PUBLIC_URL}/physicalTransformations`} component={PhysicalTransformations}/>
-              <Route path={`/${process.env.PUBLIC_URL}/gallery`} component={About}/>
+              <Route exact path={`${PUBLIC_URL}`} component={Home}/>
+              <Route exact path={`${PUBLIC_URL}about`} component={About}/>
+              <Route path={`${PUBLIC_URL}thoughtsOnProgression`} component={ThoughtsOnProgression}/>
+              <Route path={`${PUBLIC_URL}physicalTransformations`} component={PhysicalTransformations}/>
+              <Route path={`${PUBLIC_URL}gallery`} component={About}/>
             </Switch>
           </Grid>
           <Grid item xs={12}>
