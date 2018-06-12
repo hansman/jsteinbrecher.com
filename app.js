@@ -50,11 +50,11 @@ class App extends React.Component {
         <Grid container spacing={0}>
           <Grid item xs={12}>
             <Switch>
-              <Route exact path='/' component={Home}/>
-              <Route exact path='/about' component={About}/>
-              <Route path='/thoughtsOnProgression' component={ThoughtsOnProgression}/>
-              <Route path='/physicalTransformations' component={PhysicalTransformations}/>
-              <Route path='/gallery' component={About}/>
+              <Route exact path={`/${process.env.PUBLIC_URL}`} component={Home}/>
+              <Route exact path={`/${process.env.PUBLIC_URL}/about`} component={About}/>
+              <Route path={`/${process.env.PUBLIC_URL}/thoughtsOnProgression`} component={ThoughtsOnProgression}/>
+              <Route path={`/${process.env.PUBLIC_URL}/physicalTransformations`} component={PhysicalTransformations}/>
+              <Route path={`/${process.env.PUBLIC_URL}/gallery`} component={About}/>
             </Switch>
           </Grid>
           <Grid item xs={12}>
