@@ -51,10 +51,10 @@ class Menu extends React.Component {
     return (
       <Grid item xs={2} className={classes.root}>
         <List component='nav'>
-          <ListItem button className={classes.listSection}><Link to='/about' className={classes.li}><Typography variant='title' gutterBottom className={classes.li}>HANS ST</Typography></Link></ListItem>
-          <ListItem button className={classes.listSection}><Link to='/thoughtsOnProgression' className={classes.li}><Typography variant='title' gutterBottom className={classes.li}>THOUGHTS ON OUR PROGRESSION</Typography></Link></ListItem>
-          <ListItem button className={classes.listSection}><Link to='/physicalTransformations' className={classes.li}><Typography variant='title' gutterBottom className={classes.li}>PHYSICAL INTERFACES</Typography></Link></ListItem>
-          <ListItem button className={classes.listSection}><Link to='/gallery' className={classes.li}><Typography variant='title' gutterBottom className={classes.li}>GALLERY</Typography></Link></ListItem>
+          <ListItem button className={classes.listSection}><Link to={`/${process.env.PUBLIC_URL}/about`} className={classes.li}><Typography variant='title' gutterBottom className={classes.li}>HANS ST</Typography></Link></ListItem>
+          <ListItem button className={classes.listSection}><Link to={`/${process.env.PUBLIC_URL}/thoughtsOnProgression`} className={classes.li}><Typography variant='title' gutterBottom className={classes.li}>THOUGHTS ON OUR PROGRESSION</Typography></Link></ListItem>
+          <ListItem button className={classes.listSection}><Link to={`/${process.env.PUBLIC_URL}/physicalTransformations`} className={classes.li}><Typography variant='title' gutterBottom className={classes.li}>PHYSICAL INTERFACES</Typography></Link></ListItem>
+          <ListItem button className={classes.listSection}><Link to={`/${process.env.PUBLIC_URL}/gallery`} className={classes.li}><Typography variant='title' gutterBottom className={classes.li}>GALLERY</Typography></Link></ListItem>
         </List>
       </Grid>
     );
