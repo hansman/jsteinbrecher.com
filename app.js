@@ -11,7 +11,7 @@ import theme from './src/theme';
 import { Grid } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 import { Switch, Route, BrowserRouter } from 'react-router-dom';
-import Gallery from './src/gallery';
+import More from './src/gallery';
 import ThoughtsOnProgression from './src/thoughtsOnProgression';
 import PhysicalTransformations from './src/physicalTransformations';
 import 'typeface-roboto';
@@ -55,7 +55,7 @@ class App extends React.Component {
               <Route exact path={PUBLIC_URL + 'about'} component={About}/>
               <Route path={PUBLIC_URL + 'thoughtsOnProgression'} component={ThoughtsOnProgression}/>
               <Route path={PUBLIC_URL + 'physicalTransformations'} component={PhysicalTransformations}/>
-              <Route path={PUBLIC_URL + 'gallery'} component={About}/>
+              <Route path={PUBLIC_URL + 'more'} component={More}/>
             </Switch>
           </Grid>
           <Grid item xs={12}>

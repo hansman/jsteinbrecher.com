@@ -1,0 +1,261 @@
+Code research
+
+What is the code, who is the coder, what is the data? Objects full of software and electronics define our daily routine. The way we interact, move, learn, play, document, work, celebrate, relax, date, travel and many other fields of our lives are shaped by the analog and digital infrastructure that has been put in place. We rely on an ecosystem of services that defines our behavior and shapes our growth. It provides feedback on our actions that forms our habits and establishes a normativ culture. One might argue those services have been designed for consumers that demand them. Economic demand however did not evolve organically. Just as shopping mall visitors demand massages to relax from their overwhelming store experiences. One leads to the other. And this did not start by itself. The early twentieth century discovered how public relations can program societies based on Freud's psycho analytical techniques. Media compaigns got women to smoke cigarettes just as their male counterparts have been doing. It discovered how to artifically form ecnomic demand. These examples are there to show: User centered design played little role at the origin and evolution of our technological reality. The analog and digital infrastructure that we rely on, including computation and new media, has other origins.
+
+Looking at the evolution of science, it started out monolithically, as an intractably, indivisible, uniform structure, with just a few deep ideas. Previous generations could master all those ideas. Lenordo Da Vinci was amongst others Anatomist, Botanist, Painter, Architect, Writer, Cartograph, Mathematician. As time passed, that monolithic character changed. We discovered many deep new ideas, too many for any one person to master. As a result, the social structure of scientists divided around those ideas. Instead of a monolith, we have had ideas within ideas within ideas, an 'outside that leads to an inside which leads to another inside, and on and on' (A. Galloway), a complex, recursive, self-referential structure, whose organization mirrors the connections between our deepest insights. The connection between our deepest insights shapes the social organization behind it in a tree like data structure were every node is based on its ancestor node. This structure constrains what we can discover. It is as if this civilization has been put on rails routed by an invisible code. Where the code builds a data structure of human data nodes. Clearly, this structure is formable. Military motivated research set the base for the protocols of the internet and computational techniques including machine learning as we know it today. Yet, the more a recursive data structure grows the more its shape is defined by its ancestor nodes.
+
+Without fully grasping their political and social realities, I have always felt uncomfortable consuming services and products that hide their core ideas from me. I have had an urgency to get close to their inner most layers. I felt the intransperency of the systems that inform the reality we grew into limits our growth as humans and limits the technology we can create. I chose to acquire knowlege over as many layers of stacked technology as I could and got specifically excited at their zones of transition, their interface to each other. Just as touch displays are a common interface for human-machine interaction so is source code an interface into a lower level set of libraries and operation codes an so are operation codes an interface to actual physical state and mechanical motion. Interdisciplinarity is not an ambition anymore, it is a prerequisite for independence. Reflecting on this arduous and rewarding choice I realize: My nature has been rebelling against an invisible new order of the world. The rule of protocols and software as an unspoken functional analog to ideology. In contemporary culture this code is very strong. Born in 1985 I have been growing into a world that got more and more replaced by a designed one. Everything we touch, watch, consume has been explicitly designed. I believe we have gotten used to living in an almost exclusively aestheticizised and designed world and have internalized it to a degree that we stopped thinking about what this means to us. We forgot that the world was ever different and haven't found words for what changed. 'Code research' offers help to access this problematic code in a playful way.
+
+'Physical Interfaces' is an interactive art installation that allows a visitor to get transparency on the system it interacts with. The installation rebels against all abstraction, demystifies all transformations. It is an attempt to break down in-transparencies. It offers maximum honesty to the visitor by unhiding the analog and the digital. It says what it is, what it does and what it will do. Exhibited at the SFPC showcase spring 2018, most visitors described their experience as satisfying, smooth, fun, playful, relaxing, mirroring. The installation contains three sliders on linear bearings. The first slider is operated by the visitor. The other two slider are operated by dc motors based on closed loop control. The second slider followers the users slide and tries to constantly catch up with its position. The third slider followers the second slide in the same way. The position is determined using optical and acoustic distance sensors.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The code is technology and the coder is the protocols and interfaces between them.
+
+
+
+Not only do the services, products, the analog and digital infrastructure we consume shape us but also technology is self referrential.
+
+While studying optics, Isac Newton discovered the laws of gravitation which set the base for astronomy, space travel and all technologies derived from it.
+
+
+
+
+ It defines our possible futures. This social shape is self referrential. It is the result and origin of our analog and digital infrastructure at the same time. Those layers within branches of ideas, expertise and insight are a structure of privilege that restricts the access and insight that humans have. An analog of this dynamic has been first described by Michael Nielsen in 'Neural Networks and Deep Learning'.
+
+
+
+
+
+Alex Galloway describes in 'The Interface Effect': 'The point is not simply that software is functional, but that software's mock resolution of the tension between the machinic and the narrative, the functional and the disciplinary, the fluid and the fixed, the digital and the analog, is an allegorical figure for the way in which these same political and social realities are "resolved" today: not through oppression or false consciousness, as in the orthodox ideological critique, but through the ruthless rule of code, which proposes that the analog should live on to the end, only to show that the analog never existed in the first place'. This is often seen as a state after the end of history. A scenario in which there is little room for spontaneousness left to actually influence history.
+
+As Alex Galloway writes in 'The Interface Effect': 'both (analog) complex dynamical systems and (digital) software engineering have been failures at even recognizing the scope of the problem of biological complexity'.
+
+
+
+
+
+'Physical Interfaces' is an interactive art installation that allows a visitor to get transparency on the system it interacts with. The installation rebels against all abstraction, demystifies all transformations. It is an attempt to break down in-transparencies. It offers maximum honesty to the visitor by unhiding the analog and the digital. It says what it is, what it does and what it will do. Exhibited at the SFPC showcase spring 2018, most visitors described their experience as satisfying, smooth, fun, playful, relaxing, mirroring. The installation contains three sliders on linear bearings. The first slider is operated by the visitor. The other two slider are operated by dc motors based on closed loop control. The second slider followers the users slide and tries to constantly catch up with its position. The third slider followers the second slide in the same way. The position is determined using optical and acoustic distance sensors.
+
+The installation responds to a feeling of oppression by technology. What does it mean that objects full of software and electronics define our daily routine? The way we communicate, move, learn, play, document, work, celebrate, relax, date, travel are shaped by the analog and digital infrastructure we have put in place. The services we rely on define our behavior and shape our growth. They generate and deliver feedback on our actions that forms our habits and establishes a normativ culture. One could argue that those services have been designed for consumers. They are the result of a market that demands them. But user centered design played very little role at the origin and evolution of our analog and digital infrastructure including computation and new media. As Alex Galloway writes in 'The Interface Effect': 'both (analog) complex dynamical systems and (digital) software engineering have been failures at even recognizing the scope of the problem of biological complexity'.
+
+
+
+Without fully grasping their political and social realities, I have always felt uncomfortable consuming services and products that hide their core ideas and functionality from me. I have had an urgency to get close to their inner most layers. I felt the intransperency of the systems that inform the reality we grew into limits our growth as humans and limits the technology we can create. I chose to learn as many layers of our technology stack as I could and got specifically excited at their zones of transition, their interface to each other. Just as touch displays are a common interface for human-machine interaction so is source code a kind of interface, an interface into a lower level set of libraries and operation codes an so are operation codes an interface to actual physical state and momentum. Interdisciplinary is not an ambition anymore, it is a prerequisite for independence. Reflecting on this arduous and rewarding choice I realize: My nature has been rebelling against an invisible new order of the world. The rule of protocols and code. Chun claims "software is a functional analog to ideology.". In contemporary culture this code is very strong. Born in 1985 I have been growing into a world that got more and more replaced by a designed one. Everything we touch, watch, consume has been explicitly designed. I believe we have gotten used to living in an almost exclusively aestheticizised and designed world and have internalized it to a degree that we stopped thinking about what this means to us. We forgot that the world was ever different and haven't found words for what changed. 'Physical Interfaces' offers help to access this problematic not by analyzing but playing with it.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- the technolgies buidling those services are shaped by intransparent layers of abstraction
+
+- those layers of abstraction are based on the shape of the social organization behind it
+
+
+
+example:
+
+- the installation is tackling this abstraction for consumers and challenges the disjuntifness of their design
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+This infrastructure, has come a long way.
+
+
+A feeling as if technological abstraction hinders personal growth.
+Of course being equipped with an email account felt very liberating
+
+Its probably the psycho analytical programming experiments that made our societies to consumers in the earliest 20ies century and all the derived developments. Just like a software stack where every layer of the stack defines and shapes the next layer or a protocol suite where every protocol layer defines the shape of the next one.
+
+The applications that power our phones, the firmware that boots our devices, the computational infrastructure that informs our services, the formations of bits and bytes that transition through our networks of wires and cpu's, how computational logic manipulates and detects the physical world, hardware, sensors, motors, displays, humans, how engines transform their momentum through transmissions to physical movement. I am an engineer, I care about how things work. This seems like an intuitive answer to this particular drive to demystify and master. It has always felt very uncomfortable to use something that I don't understand, which layers of invisibilty I have not explored.
+
+
+Techology comes with a structure of privilege for its access. Technology comes with a resolution. And Technology is a social reality and sets a code for our societies.
+
+Being consumer of this reality felt always very uncomfortable to me. Without know exactly why I chose a path in my live that made me learn all the technologies listed and contribute to this stack of technologies in all layers. Reflecting on this slightly arduous but very rewarding path I realize: I have been rebelling against this invisible new order of the world. It's no longer powerful individuals, organizations that rule. Its the protocols that have been implemented that define our technological, economical, sociological, political reality. Of course nothing of this is god made and individuals strongly contributed and defined their nature. In its advanced state, in 2018, we find those protocols however self referential. There is limitted ways of change left to for it. At other parts this has been described as aestetizization and that we live in a time of perfect aestetizization at a time after the end of history.
+
+They given technology and protocols in place limit the number of futures that are possible from here.
+
+I have had an urgency to master the systems that surround me. To not become a puppet of given technology. I felt the intransperency of the systems that inform the reality we grew into is making us a slave. We become part of a defined protocol that allows limitted space for discovering and being ourselves. Limits the room for spontenousness. It reflects a social reality as Alex Galoway describes in 'The Interface Effect': 'The point is not simply that software is functional, but that software's mock resolution of the tension between the machinic and the narrative, the functional and the disciplinary, the fluid and the fixed, the digital and the analog, is an allegorical figure for the way in which these same political and social realities are "resolved" today: not through oppression or false consciousness, as in the orthodox ideological critique, but through the ruthless rule of code, which proposes that the analog should live on to the end, only to show that the analog never existed in the first place'
+
+
+'Physical interfaces' is an interactive installation that breaks the concept of technologial abstraction. It tries to break the concept of an outside that leads to an inside which leads to another inside, and on and on.
+
+
+
+
+
+
+Growing up in a village in the alps of great historic meaning, mozart's birthtown, home of poets like Stefan Zweig and later Hitler's eaglesnest I learned all things mechanical from my father first. Later on I started doing intense electrical engineering and computers, compilers, bits and bits, internet infrastructure, clients, frameworks. Not until recently I followed this call to demystify and learn all technology without asking where this call is coming from. Why is it so important for me to leave the perspective of a consumer and gain the view of the producer?
+
+I started to analyze and extrapolate the result of technolgizing our world. I realized that born in 1985 i grew into a world that got more and more replaced by a designed and aestetizised one. And I learned that the increasing level of design, man made manipulation and retouching, is indireclty proportional to the amount of spontenaesness in the world. Binding constructs that define the present and as a result define the future. Pathdependency. My human instinct told me to rebel against it. I always was very uncomfortable with the protocols and binding constructs in place. For the longest time I did not understan why.
+
+In 2018 the binding constructs are so strong that there is very little room for spontenaousness. Everything we touch, consume, persue has a strongly designed character. The devices we use, the services we use, the political and economic context sets an incredibly strong tone. Dynamics and protocols that are stronger than we. It leaves us wondering whats wrong. Most people have not noticed these changes and their effects. We have not found words for it yet. We are not familiar with what changed.
+
+With physical transformations is an interactive art installation that allows a visitor to get close to maximum transparrency into the system it interacts with. The installation rebels against all abstractions, demystifies and exposes all layers of transformations. It tries to be fully transparent and honest to the visitor about what it is and what it does and will do. Exhitibited at the SFPC showcase spring 2018, most visitors described their experience as very satisfying, smooth, fun, playful, relaxing. The installation contains 3 sliders on linear bearings. The first slider is operated by the visitor. The other two slider are operated by dc motors based on closed loop control. The second slider followers the users slide and tries to constantly catch up with its position. The third slider followers the second slide in the same way. The position is determined using optical and acoustic sensors.
+
+both (analog) complex dynamical systems and (digital) software engineering have been failures at even recognizing the scope of the problem of biological complexity. Yet, technology is considered an extension of humans. User experiences, interfaces extend our senses and define our experience in this world. the interface effect, resolutions, thresholds,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+An outside that leads to an inside which leads to another inside, and on and on
+
+source code is a kind of interface, an interface into a lower level set of libraries and operation codes
+
+Cavell wrote: "A painting is a world; a photograph is of a world."
+
+The computer aims not for man as an object. The
+reason is simple: because the computer is this object in and
+of itself.
+
+The world no longer indicates to us what
+it is. We indicate ourselves to it, and in doing so the world
+materializes in our image.
+
+Bernard Stiegler, who has perhaps more clearly than anyone since H eidegger framed
+the intimate co-construction of technology and being
+
+the computer belongs to that long aesthetic tradition that derives all of its energy from a fission of the one dividing into the multiple
+
+when people speak about the
+computer as an "essencing machine" what they really mean is
+that computers simulate ontologies, they define horizons of
+possibility
+
+undead persistence of, these same metaphysical principles
+
+The computer however, is not of an ontological condition, it is on that
+condition
+
+The computer instantiates a practice not a presence, an
+effect not an object. In other words, if cinema is, in general, an
+ontology, the computer is, in general, an ethic
+
+a distinction between an ethic, which describes
+general principles for practice, and the realm of the ethical,
+which defines such general principles for practice within the
+context of a specifically human relationship to moral conceptions
+of the good. So to say that the computer is in general an
+ethic is not to say that computers are "ethical."
+
+machines really have no need for humans at all (just in the same way
+that the Real has no need for us, but we have a horrifying need
+for it)
+
+Witness the Web itself, which exhibits all three elements: the universal laws of protocological exchange, sprawling across complex topologies of aggregation and dissemination, and resulting in the awesome forces of "emergent"
+vitality
+
+The interface asks a question and, in so doing, suggests
+an answer.
+
+the zone of indecision
+
+What two things face off in the intraface ? It is a type of aesthetic that implicitly brings together the edge and the center
+
+Gauges and dials have superseded lenses and windows. Writing is once again on par with image. It represents a sea change in the composition of media
+
+opposition - nondiegetic/ diegetic, paratextftext
+
+World ofWarcraft is an "ethical" game simply by virtue of the way in which it opens up the aesthetic on the one hand while closing down politics on the
+other
+
+about the aesthetic and the political
+
+Replacing the aesthetic with the political, a "coherent politics" refers to the tendency to organize around a central formation. This brand of politics produces stable institutions, ones that involve centers of operation, known fields and capacities for regulating the flow of bodies and languages. This has
+been called a process of "state" formation or a "territorialization." Coherent politics include highly precise languages for the articulation of social beings. Evidence of their existence may be seen across a variety of actually existing political systems including fascism and national socialism but also liberal democracy.
+
+
+(1) Ideological: an aesthetic of coherence, a politics of
+coherence;
+(2) Ethical: an aesthetic of incoherence, a politics of
+coherence;
+(3) Poetic: an aesthetic of coherence, a politics of
+incoherence ;
+(4) Truth: an aesthetic of incoherence, a politics of
+incoherence .
+
+
+
+ideology gets modeled in software. So in the very perfection of the ideological regime, in the form of its pure digital simulation, comes the death of the ideological regime, and simulation is "crowned winner" as the absolute
+horizon of the ideological world. The computer is the ultimate ethical machine. It has no actual relation with ideology in any proper sense of the term, only a virtual relation.
+
+
+ it is foolish to think that writing
+an "if-then" control structure in eight lines of assembly code
+is any more or less machinic than doing it in one line of C,
+just as the same quadratic equation may swell with any number
+of multipliers and still remain balanced. The relationship
+between the two is technical
+
+
+software is not merely a vehicle for ideology; instead, the ideological contradictions of technical transcoding and fetishistic abstraction are enacted and "resolved" within the very form of software itself
+
+New media hide as much as they show, and the ultimate power of Chun's essay is found in a symptom, an idea that appears in the title but then hides itself during most of her essay just as fiercely as it proclaims itself at the start.
+
+Software operates through a technological model that places a great premium on meticulous symbolic declarations and descriptions, yet at the same time requires concealment, encapsulation, and obfuscation of large portions of code .
+
+This is not to promote some sort of conspiracy theory for the new economy, simply to note the significant formal similarities between the structure of software as a media technology and the structure of ideology - with the commodity as a waypoint between the two
+
+let us return to Chun's claim that "software is a functional analog to ideology." This indicates not only that software is an analog to ideology, but a much more fundamental claim, that software is functional in nature, therefore suggesting that ideology might be too. In other words, software is ideology turned machinic
+
+Software is algorithmically affective in ways that ideology never was
+
+code is the only language that is executable
+
+As language, software is a symbolic system that can exist in different modes, often understood as linguistic or code "layers"
+
+The operating system may exist as an executable on disk, but it also exists phenomenologically as a metaphoric , cybernetic interface: the "desktop." (Of course metaphor is entirely the wrong term for talking about figurative interactivity, but it will have to do for the moment; in the context of gaming I have proposed "allegorithm," a portmanteau of "allegory" and "algorithm," but it too seems slightly awkward for the present discussion.)
+
+abstraction and figuration do exist in software (the interface metaphor of the "desktop" as functional emanation of source code, or any number of examples cited previously) demonstrates the fundamental indeterminacy of a technological apparatus that is, admittedly, grounded in rote, deterministic mathematical language. It is representation in form, but not in deed, and this is the paradox
+
+Software, in other words, asks a question to which the political interpretation is the only coherent answer
+
+The point is not simply that software is functional, but that software's mock resolution of the tension between the machinic and the narrative, the functional and the disciplinary, the fluid and the fixed, the digital and the analog, is an allegorical figure for the way in which these same political and social realities
+are "resolved" today: not through oppression or false consciousness, as in the orthodox ideological critique, but through the ruthless rule of code, which proposes that the analog should live on to the end, only to show that the analog never existed in the first place
+
+if unrepresentability is in play it will be in play around the mode of production and the realities of the socio-historical situation

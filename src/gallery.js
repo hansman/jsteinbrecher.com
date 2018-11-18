@@ -1,5 +1,14 @@
 import React from 'react';
-import imageURL from '../assets/portrait1.jpg';
+import painting1 from '../assets/painting1.jpg';
+import painting2 from '../assets/painting2.jpg';
+import puppet1 from '../assets/puppet1.jpg';
+import puppet2 from '../assets/puppet2.jpg';
+import puppet3 from '../assets/puppet3.jpg';
+import molnarSquares from '../assets/molnarSquares.gif';
+import whitneyCircles from '../assets/whitneyCircles.gif';
+import walkingMan from '../assets/walkingMan.gif';
+import redDots from '../assets/redDots.gif';
+import loveCode from '../assets/loveCode.gif';
 import { Grid, Modal, SimpleModalWrapped, Typography } from '@material-ui/core';
 import Image from 'material-ui-image';
 import { withStyles } from '@material-ui/core/styles';
@@ -32,7 +41,7 @@ const styles = theme => ({
   }
 });
 
-class Gallery extends React.Component {
+class More extends React.Component {
 
   constructor (props) {
     super(props);
@@ -49,30 +58,92 @@ class Gallery extends React.Component {
   render () {
     const size = 18;
     const color = '#fff';
+    const xs = 8;
 
     const { classes } = this.props;
 
-    return <Grid container justify='center' spacing={24} className={classes.root}>
-      <Grid item xs={10}>
-        <Typography gutterBottom className={classes.font}>
-          {`
-            I am an engineer and artist from a remote town in the Alps, located on the German - Austrian border. Through algorithms, protocols, sound and motion I demystify the systems that structure the world we live in. My practice makes the layers of invisible analog and digital transformations that surround us accessible and tangible. I wonder how new spontaneity can grow out of those binding constructs? Born in 1985, my work is based on my history as a human growing up in a world that got more and more replaced by an engineered and designed one. I work in San Francisco, Munich and New York City.
-          `}
-        </Typography>
-      </Grid>
-      <Grid item xs={10}>
+    return <Grid container justify='center' spacing={40} className={classes.root}>
+      <Grid item xs={xs} spacing={24}>
         <Image
           className={classes.img}
-            src={imageURL}
+          src={puppet1}
+          color='rgba(0,0,0,0.8)'
+          aspectRatio={1.855}
         />
       </Grid>
-      <Grid item xs={10}>
-        <Typography gutterBottom className={classes.font}>
-          {`
-            I am an engineer and artist from a remote town in the Alps, located on the German - Austrian border. Through algorithms, protocols, sound and motion I demystify the systems that structure the world we live in. My practice makes the layers of invisible analog and digital transformations that surround us accessible and tangible. I wonder how new spontaneity can grow out of those binding constructs? Born in 1985, my work is based on my history as a human growing up in a world that got more and more replaced by an engineered and designed one. I work in San Francisco, Munich and New York City.
-          `}
-        </Typography>
+      <Grid item xs={xs} spacing={24}>
+        <Image
+          className={classes.img}
+          src={puppet2}
+          color='rgba(0,0,0,0.8)'
+          aspectRatio={1.855}
+        />
       </Grid>
+      <Grid item xs={xs}>
+        <Image
+          className={classes.img}
+          src={puppet3}
+          color='rgba(0,0,0,0.8)'
+          aspectRatio={1.855}
+        />
+      </Grid>
+      <Grid item xs={8}>
+        <Image
+          className={classes.img}
+          src={whitneyCircles}
+          color='rgba(0,0,0,0.8)'
+          aspectRatio={1.5}
+        />
+      </Grid>
+      <Grid item xs={8}>
+        <Image
+          className={classes.img}
+          src={walkingMan}
+          color='rgba(0,0,0,0.8)'
+          aspectRatio={1}
+        />
+      </Grid>
+      <Grid item xs={8}>
+        <Image
+          className={classes.img}
+          src={molnarSquares}
+          color='rgba(0,0,0,0.8)'
+          aspectRatio={1}
+        />
+      </Grid>
+      <Grid item xs={8}>
+        <Image
+          className={classes.img}
+          src={redDots}
+          color='rgba(0,0,0,0.8)'
+          aspectRatio={2}
+        />
+      </Grid>
+      <Grid item xs={8}>
+        <Image
+          className={classes.img}
+          src={loveCode}
+          color='rgba(0,0,0,0.8)'
+          aspectRatio={2}
+        />
+      </Grid>
+      <Grid item xs={8}>
+        <Image
+          className={classes.img}
+          src={painting1}
+          color='rgba(0,0,0,0.8)'
+          aspectRatio={0.8}
+        />
+      </Grid>
+      <Grid item xs={8}>
+        <Image
+          className={classes.img}
+          src={painting2}
+          color='rgba(0,0,0,0.8)'
+          aspectRatio={0.8}
+        />
+      </Grid>
+
 
     </Grid>;
   }
@@ -80,4 +151,4 @@ class Gallery extends React.Component {
 }
 
 
-export default withStyles(styles)(Gallery);
+export default withStyles(styles)(More);
