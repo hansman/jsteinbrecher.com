@@ -24,6 +24,7 @@ const styles = theme => ({
     padding: theme.spacing.unit * 15
   },
   font: {
+    marginTop: 15,
     color: 'white'
   },
   img: {
@@ -70,6 +71,11 @@ class More extends React.Component {
           color='rgba(0,0,0,0.8)'
           aspectRatio={1.855}
         />
+        <Typography gutterBottom variant='caption' className={classes.font}>
+          {`
+            September 2018
+          `}
+        </Typography>
       </Grid>
       <Grid item xs={xs} spacing={24}>
         <Image
@@ -94,6 +100,11 @@ class More extends React.Component {
           color='rgba(0,0,0,0.8)'
           aspectRatio={1.5}
         />
+        <Typography gutterBottom variant='caption' className={classes.font}>
+          {`
+            April 2018
+          `}
+        </Typography>
       </Grid>
       <Grid item xs={8}>
         <Image
@@ -102,6 +113,11 @@ class More extends React.Component {
           color='rgba(0,0,0,0.8)'
           aspectRatio={1}
         />
+        <Typography gutterBottom variant='caption' className={classes.font}>
+          {`
+            May 2018
+          `}
+        </Typography>
       </Grid>
       <Grid item xs={8}>
         <Image
@@ -110,6 +126,11 @@ class More extends React.Component {
           color='rgba(0,0,0,0.8)'
           aspectRatio={1}
         />
+        <Typography gutterBottom variant='caption' className={classes.font}>
+          {`
+            March 2018
+          `}
+        </Typography>
       </Grid>
       <Grid item xs={8}>
         <Image
@@ -118,6 +139,11 @@ class More extends React.Component {
           color='rgba(0,0,0,0.8)'
           aspectRatio={2}
         />
+        <Typography gutterBottom variant='caption' className={classes.font}>
+          {`
+            March 2018
+          `}
+        </Typography>
       </Grid>
       <Grid item xs={8}>
         <Image
@@ -126,6 +152,11 @@ class More extends React.Component {
           color='rgba(0,0,0,0.8)'
           aspectRatio={2}
         />
+        <Typography gutterBottom variant='caption' className={classes.font}>
+          {`
+            April 2018
+          `}
+        </Typography>
       </Grid>
       <Grid item xs={8}>
         <Image
@@ -134,6 +165,11 @@ class More extends React.Component {
           color='rgba(0,0,0,0.8)'
           aspectRatio={0.8}
         />
+        <Typography gutterBottom variant='caption' className={classes.font}>
+          {`
+            August 2018
+          `}
+        </Typography>
       </Grid>
       <Grid item xs={8}>
         <Image
@@ -142,6 +178,11 @@ class More extends React.Component {
           color='rgba(0,0,0,0.8)'
           aspectRatio={0.8}
         />
+        <Typography gutterBottom variant='caption' className={classes.font}>
+          {`
+            July 2018
+          `}
+        </Typography>
       </Grid>
 
 
