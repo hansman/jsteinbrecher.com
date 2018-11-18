@@ -76,7 +76,7 @@ class About extends React.Component {
       <Grid item xs={6}>
         <Typography gutterBottom className={classes.font}>
           {`
-            I am an engineer and artist from a remote town in the Alps, located on the German - Austrian border. Through algorithms, protocols, sound and motion I demystify the systems that structure the world we live in. My practice makes the layers of invisible analog and digital transformations that surround us accessible and tangible. I wonder how new spontaneity can grow out of those binding constructs? Born in 1985, my work is based on my history as a human growing up in a world that got more and more replaced by an engineered and designed one. I work in San Francisco, Munich and New York City.
+            I am an engineer and applied scientist from a remote town in the Alps, located on the German - Austrian border. Through algorithms, protocols, sound and motion I demystify the systems that structure the world we live in. My practice makes the layers of invisible analog and digital transformations that surround us accessible and tangible. I wonder how new spontaneity can grow out of those binding constructs? Born in 1985, my work is based on my history as a human growing up in a world that got more and more replaced by an engineered and designed one. I work in San Francisco, Munich and New York City.
           `}
         </Typography>
       </Grid>
