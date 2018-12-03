@@ -5,7 +5,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import paper from 'paper';
-import fonts from '../fonts/*'
 import { redColors, yellowColors } from './colors';
 import Controls from './controls';
 import {branch} from 'baobab-react/higher-order';

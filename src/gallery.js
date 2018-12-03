@@ -1,5 +1,5 @@
 import React from 'react';
-import painting1 from '../assets/painting1.jpg';
+import painting1 from '../assets/whiteMoonInRed.JPG';
 import painting2 from '../assets/painting2.jpg';
 import puppet1 from '../assets/puppet1.jpg';
 import puppet2 from '../assets/puppet2.jpg';
@@ -84,6 +84,11 @@ class More extends React.Component {
           color='rgba(0,0,0,0.8)'
           aspectRatio={1.855}
         />
+        <Typography gutterBottom variant='caption' className={classes.font}>
+          {`
+            September 2018
+          `}
+        </Typography>
       </Grid>
       <Grid item xs={xs}>
         <Image
@@ -92,69 +97,9 @@ class More extends React.Component {
           color='rgba(0,0,0,0.8)'
           aspectRatio={1.855}
         />
-      </Grid>
-      <Grid item xs={8}>
-        <Image
-          className={classes.img}
-          src={whitneyCircles}
-          color='rgba(0,0,0,0.8)'
-          aspectRatio={1.5}
-        />
         <Typography gutterBottom variant='caption' className={classes.font}>
           {`
-            April 2018
-          `}
-        </Typography>
-      </Grid>
-      <Grid item xs={8}>
-        <Image
-          className={classes.img}
-          src={walkingMan}
-          color='rgba(0,0,0,0.8)'
-          aspectRatio={1}
-        />
-        <Typography gutterBottom variant='caption' className={classes.font}>
-          {`
-            May 2018
-          `}
-        </Typography>
-      </Grid>
-      <Grid item xs={8}>
-        <Image
-          className={classes.img}
-          src={molnarSquares}
-          color='rgba(0,0,0,0.8)'
-          aspectRatio={1}
-        />
-        <Typography gutterBottom variant='caption' className={classes.font}>
-          {`
-            March 2018
-          `}
-        </Typography>
-      </Grid>
-      <Grid item xs={8}>
-        <Image
-          className={classes.img}
-          src={redDots}
-          color='rgba(0,0,0,0.8)'
-          aspectRatio={2}
-        />
-        <Typography gutterBottom variant='caption' className={classes.font}>
-          {`
-            March 2018
-          `}
-        </Typography>
-      </Grid>
-      <Grid item xs={8}>
-        <Image
-          className={classes.img}
-          src={loveCode}
-          color='rgba(0,0,0,0.8)'
-          aspectRatio={2}
-        />
-        <Typography gutterBottom variant='caption' className={classes.font}>
-          {`
-            April 2018
+            September 2018
           `}
         </Typography>
       </Grid>
@@ -181,6 +126,71 @@ class More extends React.Component {
         <Typography gutterBottom variant='caption' className={classes.font}>
           {`
             July 2018
+          `}
+        </Typography>
+      </Grid>
+      <Grid item xs={8}>
+        <Image
+          className={classes.img}
+          src={walkingMan}
+          color='rgba(0,0,0,0.8)'
+          aspectRatio={1}
+        />
+        <Typography gutterBottom variant='caption' className={classes.font}>
+          {`
+            May 2018
+          `}
+        </Typography>
+      </Grid>
+      <Grid item xs={8}>
+        <Image
+          className={classes.img}
+          src={whitneyCircles}
+          color='rgba(0,0,0,0.8)'
+          aspectRatio={1.5}
+        />
+        <Typography gutterBottom variant='caption' className={classes.font}>
+          {`
+            April 2018
+          `}
+        </Typography>
+      </Grid>
+      <Grid item xs={8}>
+        <Image
+          className={classes.img}
+          src={molnarSquares}
+          color='rgba(0,0,0,0.8)'
+          aspectRatio={1}
+        />
+        <Typography gutterBottom variant='caption' className={classes.font}>
+          {`
+            March 2018
+          `}
+        </Typography>
+      </Grid>
+      <Grid item xs={8}>
+        <Image
+          className={classes.img}
+          src={loveCode}
+          color='rgba(0,0,0,0.8)'
+          aspectRatio={2}
+        />
+        <Typography gutterBottom variant='caption' className={classes.font}>
+          {`
+            April 2018
+          `}
+        </Typography>
+      </Grid>
+      <Grid item xs={8}>
+        <Image
+          className={classes.img}
+          src={redDots}
+          color='rgba(0,0,0,0.8)'
+          aspectRatio={2}
+        />
+        <Typography gutterBottom variant='caption' className={classes.font}>
+          {`
+            March 2018
           `}
         </Typography>
       </Grid>
