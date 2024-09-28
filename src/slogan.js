@@ -10,6 +10,7 @@ import Controls from './controls';
 import {branch} from 'baobab-react/higher-order';
 import { withStyles } from '@material-ui/core/styles';
 import { debounce } from 'lodash';
+import Actions from './actions'
 
 
 const styles = theme => ({
@@ -42,6 +43,12 @@ class Slogan extends React.Component {
     this.renderFrame = this.renderFrame.bind(this);
     this.updateWindowDimensions = debounce(this.updateWindowDimensions.bind(this), 100);
     this.setup = this.setup.bind(this);
+    this.onAnimate = this.onAnimate.bind(this);
+  }
+
+  onAnimate() {
+    const {animate} = this.props.slogan;
+    Actions.setState(['slogan', 'animate'], !animate);
   }
 
   componentWillUnmount() {
@@ -103,7 +110,7 @@ class Slogan extends React.Component {
 
     const stride = resolution * 2.5;
     const radius = resolution;
-    const fontSize = this.state.height / 9;
+    const fontSize = Math.min(this.state.height / 5, this.state.width / 6) ;
     const offset = 150;
 
     const textItems = [];
@@ -130,36 +137,22 @@ class Slogan extends React.Component {
     let { width, height } = paper.view.size;
 
     textItems.push(new paper.PointText({
-        content: 'HANS',
-        point: new paper.Point(width / 2, offset),
+        content: 'CODE',
+        point: new paper.Point(width / 2, 0),
         fillColor: 'black',
-        fontWeight: 20,
         fontSize
     }));
 
     textItems.push(new paper.PointText({
-        content: 'STE I',
-        point: new paper.Point(width / 2, offset + offset),
+        content: 'LOVE',
+        point: new paper.Point(width / 2, 0),
         fillColor: 'black',
-        fontWeight: 20,
         fontSize
     }));
+    textItems.forEach(textItem => {
+      textItem.fontFamily = 'Menlo Full'
+    });
 
-    textItems.push(new paper.PointText({
-        content: 'NBRE',
-        point: new paper.Point(width / 2, offset + offset + offset),
-        fillColor: 'black',
-        fontWeight: 20,
-        fontSize
-    }));
-
-    textItems.push(new paper.PointText({
-      content: 'CHER',
-      point: new paper.Point(width / 2, offset + offset + offset + offset),
-      fillColor: 'black',
-      fontWeight: 20,
-      fontSize
-    }));
     paper.view.draw();
 
     rasterItems = textItems.map((textItem) => {
@@ -169,9 +162,12 @@ class Slogan extends React.Component {
     rasterItems.forEach((raster, index) => {
 
       let lineHeight = raster.height;
-      let lineSpace = (this.state.height - 4 * lineHeight) / 5;
+      let lineSpace = (this.state.height - 2 * lineHeight) / 3;
 
-      raster.position = new paper.Point(this.state.width / 2 - raster.width / 2, index * (lineHeight + lineSpace));
+      console.log('lineHeight', lineHeight)
+      console.log('lineSpace', lineSpace)
+      console.log('height', this.state.height)
+      raster.position = new paper.Point(this.state.width / 2 - raster.width / 2, (index + 0) * (lineHeight + lineSpace) + lineSpace ) // new paper.Point(this.state.width / 2 - raster.width / 2, index * (lineHeight + lineSpace));
       raster.visible = true;
 
     });
@@ -233,7 +229,7 @@ class Slogan extends React.Component {
   render() {
     const { classes } = this.props;
     return <div className={classes.root} style={{width: this.state.width, height: this.state.height}}>
-      <canvas ref='canvas' style={{width: this.state.width, height: this.state.height}} />
+      <canvas ref='canvas' style={{width: this.state.width, height: this.state.height}} onClick={this.onAnimate} />
       <Controls {...this.props.slogan} />
     </div>
   }

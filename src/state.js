@@ -2,8 +2,8 @@ import Baobab from 'baobab'
 
 const tree = new Baobab({
   slogan: {
-  	animate: false,
-  	resolution: 3
+  	animate: true,
+  	resolution: 2.7
   }
 });
 
