@@ -79,6 +79,7 @@ class Slogan extends React.Component {
     window.addEventListener('resize', this.updateWindowDimensions, false);
     window.addEventListener('orientationchange', this.updateWindowDimensions);
     this.setup();
+    paper.view.onFrame = this.renderFrame.bind(this);
   }
 
   updateWindowDimensions() {

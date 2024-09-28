@@ -3,21 +3,17 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss'
 import Slogan from './src/slogan';
-import Menu from './src/menu';
 import tree from './src/state'
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { MuiThemeProvider } from '@material-ui/core/styles';
 import theme from './src/theme';
 import { Grid } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
-import { Switch, Route, BrowserRouter } from 'react-router-dom';
-import More from './src/gallery';
-import ThoughtsOnProgression from './src/thoughtsOnProgression';
-import PhysicalTransformations from './src/physicalTransformations';
+import { BrowserRouter } from 'react-router-dom';
 import 'typeface-roboto';
 import { root } from 'baobab-react/higher-order';
 
-const PUBLIC_URL = '/jsteinbrecher.com/';
+const PUBLIC_URL = '/codelove.site/';
 
 const styles = theme => ({
   root: {
@@ -48,15 +44,6 @@ class App extends React.Component {
       <MuiThemeProvider theme={theme}>
         <CssBaseline />
         <Grid container spacing={0}>
-          <Grid item xs={12}>
-            <Switch>
-              <Route exact path={PUBLIC_URL} component={Home}/>
-              <Route exact path={PUBLIC_URL + 'about'} component={About}/>
-              <Route path={PUBLIC_URL + 'thoughtsOnProgression'} component={ThoughtsOnProgression}/>
-              <Route path={PUBLIC_URL + 'physicalTransformations'} component={PhysicalTransformations}/>
-              <Route path={PUBLIC_URL + 'more'} component={More}/>
-            </Switch>
-          </Grid>
           <Grid item xs={12}>
             <Slogan forceRerender={this.forceUpdate.bind(this)} />
           </Grid>
