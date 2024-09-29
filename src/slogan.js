@@ -1,5 +1,5 @@
 /**
- * Hanst Steinbrecher 2018
+ * Hans Steinbrecher 2018
  * Inspired by Dimitri Likissas 'DESIRE'
  */
 import React from 'react';
@@ -11,6 +11,7 @@ import {branch} from 'baobab-react/higher-order';
 import { withStyles } from '@material-ui/core/styles';
 import { debounce } from 'lodash';
 import Actions from './actions'
+import ReactGA from 'react-ga';
 
 
 const styles = theme => ({
@@ -49,6 +50,11 @@ class Slogan extends React.Component {
   onAnimate() {
     const {animate} = this.props.slogan;
     Actions.setState(['slogan', 'animate'], !animate);
+    ReactGA.event({
+      category: 'User',
+      action: 'Clicked Animate',
+      label: animate
+    });
   }
 
   componentWillUnmount() {
