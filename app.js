@@ -15,6 +15,11 @@ import { root } from 'baobab-react/higher-order';
 
 const PUBLIC_URL = '/codelove.site/';
 
+import ReactGA from 'react-ga';
+
+ReactGA.initialize('G-YGJX8W3YMC');
+ReactGA.pageview(window.location.pathname + window.location.search);
+
 const styles = theme => ({
   root: {
     flexGrow: 1,
