@@ -138,7 +138,7 @@ class Slogan extends React.Component {
     while ((rasterItems.length == 0) || rasterItems[0].width > 0.9 * width || 2 * rasterItems[0].height > 0.9 * height ) {
       
       if (rasterItems.length != 0) {  
-        fontSize = fontSize - 20;
+        fontSize = fontSize - 40;
       }
       textItems = [];
       textItems.push(new paper.PointText({
