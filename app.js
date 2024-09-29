@@ -42,6 +42,7 @@ class App extends React.Component {
 
 
   render() {
+    ReactGA.pageview('/');
 
     const { classes } = this.props;
 
