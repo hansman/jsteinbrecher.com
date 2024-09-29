@@ -32,12 +32,12 @@ class Slogan extends React.Component {
     this.state = {
       width: window.innerWidth,
       height: window.innerHeight,
-      stride: 8,
       textDs: [],
       textPaths: [],
       rasterItems: [],
       redDots: [],
-      yellowDots: []
+      yellowDots: [],
+      fontSize: 300
     };
 
     this.renderFrame = this.renderFrame.bind(this);
@@ -111,10 +111,9 @@ class Slogan extends React.Component {
 
     const stride = resolution * 2.5;
     const radius = resolution;
-    const fontSize = Math.min(this.state.height / 5, this.state.width / 6) ;
-    const offset = 150;
+    let fontSize = this.state.fontSize;
 
-    const textItems = [];
+    let textItems = [];
     let rasterItems = [];
 
     console.log('state', this.state);
@@ -134,47 +133,46 @@ class Slogan extends React.Component {
     paper.setup(canvas);
     paper.view.onFrame = onFrame;
 
-
     let { width, height } = paper.view.size;
 
-    textItems.push(new paper.PointText({
-        content: 'CODE',
-        point: new paper.Point(width / 2, 0),
-        fillColor: 'black',
-        fontSize
-    }));
+    while ((rasterItems.length == 0) || rasterItems[0].width > 0.9 * width || 2 * rasterItems[0].height > 0.9 * height ) {
+      
+      if (rasterItems.length != 0) {  
+        fontSize = fontSize - 20;
+      }
+      textItems = [];
+      textItems.push(new paper.PointText({
+          content: 'CODE',
+          point: new paper.Point(width / 2, 0),
+          fillColor: 'black',
+          fontSize
+      }));
 
-    textItems.push(new paper.PointText({
-        content: 'LOVE',
-        point: new paper.Point(width / 2, 0),
-        fillColor: 'black',
-        fontSize
-    }));
-    textItems.forEach(textItem => {
-      textItem.fontFamily = 'Menlo Full'
-    });
+      textItems.push(new paper.PointText({
+          content: 'LOVE',
+          point: new paper.Point(width / 2, 0),
+          fillColor: 'black',
+          fontSize
+      }));
 
-    paper.view.draw();
+      rasterItems = textItems.map((textItem) => {
+        textItem.fontFamily = 'Courier'
+        return textItem.rasterize();
+      });
+    }
 
-    rasterItems = textItems.map((textItem) => {
-      return textItem.rasterize();
-    });
+    let lineHeight = rasterItems[0].height;
+    let xPos = width / 2 - rasterItems[0].width / 2;
+    let yPos = (height - 2 * lineHeight) / 2
+    rasterItems[0].position = new paper.Point(xPos, yPos); 
+    rasterItems[0].visible = true;
 
-    rasterItems.forEach((raster, index) => {
+    rasterItems[1].position = new paper.Point(xPos, yPos + lineHeight); 
+    rasterItems[1].visible = true;
 
-      let lineHeight = raster.height;
-      let lineSpace = (this.state.height - 2 * lineHeight) / 3;
 
-      console.log('lineHeight', lineHeight)
-      console.log('lineSpace', lineSpace)
-      console.log('height', this.state.height)
-      raster.position = new paper.Point(this.state.width / 2 - raster.width / 2, (index + 0) * (lineHeight + lineSpace) + lineSpace ) // new paper.Point(this.state.width / 2 - raster.width / 2, index * (lineHeight + lineSpace));
-      raster.visible = true;
-
-    });
-
-    for (let x = 0; x < this.state.width; x += stride) {
-      for (let y = 0; y < this.state.height; y += stride) {
+    for (let x = 0; x < width; x += stride) {
+      for (let y = 0; y < height; y += stride) {
         let pointContained = false;
         let point = new paper.Point(x, y);
         let myCircle = new paper.Path.Circle(point, radius);
@@ -183,7 +181,7 @@ class Slogan extends React.Component {
           let raster = rasterItems[i];
 
           let lineHeight = raster.height;
-          let lineSpace = (this.state.height - 4 * lineHeight) / 5;
+          let lineSpace = (height - 4 * lineHeight) / 5;
 
           let rasterX = x - raster.position.x;
           let rasterY = y - raster.position.y;
